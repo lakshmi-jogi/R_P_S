@@ -4,10 +4,10 @@ def comp_ch():
     ch=["rock","paper","scissors"]
     return random.choice(ch)
 def user_ch():
-    ch=input("Enter your Choice[rock,paper,scissors]").lower()
+    ch=input("Enter your Choice[rock,paper,scissors]:").lower()
     while ch not in ["rock","paper","scissors"]:
         print("Invalid Input")
-        ch=input("Enter your Choice").lower()
+        ch=input("Enter your Choice:").lower()
     return ch
 def win(user,comp):
     if user==comp:
